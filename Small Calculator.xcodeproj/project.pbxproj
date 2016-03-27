@@ -43,7 +43,7 @@
 		728E93111CA82B6600E3F2A3 = {
 			isa = PBXGroup;
 			children = (
-				728E931C1CA82B6600E3F2A3 /* testing */,
+				728E931C1CA82B6600E3F2A3 /* Small Calculator */,
 				728E931B1CA82B6600E3F2A3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,7 +56,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		728E931C1CA82B6600E3F2A3 /* testing */ = {
+		728E931C1CA82B6600E3F2A3 /* Small Calculator */ = {
 			isa = PBXGroup;
 			children = (
 				728E931D1CA82B6600E3F2A3 /* AppDelegate.h */,
@@ -70,6 +70,7 @@
 				728E93311CA833DC00E3F2A3 /* OperationsHandler.h */,
 				728E93321CA833DC00E3F2A3 /* OperationsHandler.m */,
 			);
+			name = "Small Calculator";
 			path = testing;
 			sourceTree = "<group>";
 		};
