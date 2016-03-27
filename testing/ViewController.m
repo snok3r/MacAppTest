@@ -8,6 +8,15 @@
 
 #import "ViewController.h"
 
+@interface ViewController ()
+
+@property (weak) IBOutlet NSTextField *firstNumber;
+@property (weak) IBOutlet NSTextField *secondNumber;
+@property (weak) IBOutlet NSTextField *result;
+- (IBAction)performOperation:(id)sender;
+
+@end
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -20,6 +29,13 @@
     [super setRepresentedObject:representedObject];
 
     // Update the view, if already loaded.
+}
+
+- (IBAction)performOperation:(id)sender {
+    if ([sender isKindOfClass:[NSButton class]]){
+        NSButton *button = sender;
+        NSLog(@"performing: %@ operation", button.title);
+    }
 }
 
 @end
