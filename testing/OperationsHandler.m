@@ -10,34 +10,17 @@
 
 @implementation OperationsHandler
 
-+ (NSNumber *)resultOfOperationWith:(NSNumber *)firstArg andSecondArgument:(NSNumber *)secondArg operation:(NSString *)operation {
++ (CGFloat)performOperation:(NSString *)operation onFirstOperand:(CGFloat)firstOperand andSecondOperand:(CGFloat)secondOperand {
     
-    double res;
+    CGFloat res;
     if ([operation isEqualToString:@"+"])
-        res = [firstArg doubleValue] + [secondArg doubleValue];
+        res = firstOperand + secondOperand;
     else if ([operation isEqualToString:@"-"])
-        res = [firstArg doubleValue] - [secondArg doubleValue];
+        res = firstOperand - secondOperand;
     else if ([operation isEqualToString:@"*"])
-        res = [firstArg doubleValue] * [secondArg doubleValue];
+        res = firstOperand * secondOperand;
     
-    return [NSNumber numberWithDouble:(res)];
-}
-
-+ (NSNumber *)resultOfOperationWith:(NSTextField *)firstField andSecondField:(NSTextField *)secondField operation:(NSString *)operation {
-    
-    NSNumber *firstArg, *secondArg;
-    @try {
-        firstArg = [NSNumber numberWithDouble:[firstField doubleValue]];
-        secondArg = [NSNumber numberWithDouble:[secondField doubleValue]];
-        
-        return [OperationsHandler resultOfOperationWith:firstArg andSecondArgument:secondArg operation:operation];
-        
-    } @catch (NSException *exception) {
-        
-    } @finally {
-        firstArg = NULL, secondArg = NULL;
-    }
-    
+    return res;
 }
 
 @end

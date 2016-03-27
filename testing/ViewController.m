@@ -14,7 +14,7 @@
 @property (weak) IBOutlet NSTextField *firstNumber;
 @property (weak) IBOutlet NSTextField *secondNumber;
 @property (weak) IBOutlet NSTextField *result;
-- (IBAction)performOperation:(id)sender;
+- (IBAction)onOperationPressed:(NSButton *)sender;
 
 @end
 
@@ -22,23 +22,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     // Do any additional setup after loading the view.
 }
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
-
     // Update the view, if already loaded.
 }
 
-- (IBAction)performOperation:(id)sender {
-    if ([sender isKindOfClass:[NSButton class]]){
-        NSButton *button = sender;
-        NSLog(@"performing: %@ operation", button.title);
-        NSNumber *res = [OperationsHandler resultOfOperationWith:_firstNumber andSecondField:_secondNumber operation:button.title];
-        [_result setDoubleValue:[res doubleValue]];
-    }
+- (IBAction)onOperationPressed:(NSButton *)sender {
+    NSLog(@"performing: %@ operation", sender.title);
+    CGFloat res = [OperationsHandler performOperation:sender.title onFirstOperand:[_firstNumber floatValue] andSecondOperand:[_secondNumber floatValue]];
+    [_result setFloatValue:res];
 }
 
 @end

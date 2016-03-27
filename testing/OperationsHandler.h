@@ -10,7 +10,6 @@
 
 @interface OperationsHandler : NSObject
 
-+ (NSNumber *)resultOfOperationWith:(NSNumber *)firstArg andSecondArgument:(NSNumber *)secondArg operation:(NSString *)operation;
-+ (NSNumber *)resultOfOperationWith:(NSTextField *)firstField andSecondField:(NSTextField *)secondField operation:(NSString *)operation;
++ (CGFloat)performOperation:(NSString *)operation onFirstOperand:(CGFloat)firstOperand andSecondOperand:(CGFloat)secondOperand;
 
 @end

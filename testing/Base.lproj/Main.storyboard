@@ -361,7 +361,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="performOperation:" target="XfG-lQ-9wD" id="UwN-Df-wCN"/>
+                                    <action selector="onOperationPressed:" target="XfG-lQ-9wD" id="LCh-nP-mBi"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QyW-3X-N52">
@@ -371,7 +371,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="performOperation:" target="XfG-lQ-9wD" id="Mew-UJ-RMM"/>
+                                    <action selector="onOperationPressed:" target="XfG-lQ-9wD" id="IOO-Vq-unH"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sGg-Vf-h0V">
@@ -381,7 +381,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="performOperation:" target="XfG-lQ-9wD" id="kp4-wF-hc0"/>
+                                    <action selector="onOperationPressed:" target="XfG-lQ-9wD" id="L8B-hS-ycJ"/>
                                 </connections>
                             </button>
                         </subviews>
