@@ -1,12 +1,13 @@
 //
 //  ViewController.m
-//  testing
+//  Small Calculator
 //
 //  Created by Konstantin Davidenko on 27.03.16.
 //  Copyright © 2016 Konstantin Davidenko. All rights reserved.
 //
 
 #import "ViewController.h"
+#import "OperationsHandler.h"
 
 @interface ViewController ()
 
@@ -35,6 +36,8 @@
     if ([sender isKindOfClass:[NSButton class]]){
         NSButton *button = sender;
         NSLog(@"performing: %@ operation", button.title);
+        NSNumber *res = [OperationsHandler resultOfOperationWith:_firstNumber andSecondField:_secondNumber operation:button.title];
+        [_result setDoubleValue:[res doubleValue]];
     }
 }
 

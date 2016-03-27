@@ -12,10 +12,11 @@
 		728E93251CA82B6600E3F2A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E93241CA82B6600E3F2A3 /* ViewController.m */; };
 		728E93271CA82B6600E3F2A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 728E93261CA82B6600E3F2A3 /* Assets.xcassets */; };
 		728E932A1CA82B6600E3F2A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 728E93281CA82B6600E3F2A3 /* Main.storyboard */; };
+		728E93331CA833DC00E3F2A3 /* OperationsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 728E93321CA833DC00E3F2A3 /* OperationsHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		728E931A1CA82B6600E3F2A3 /* testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		728E931A1CA82B6600E3F2A3 /* Small Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Small Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		728E931D1CA82B6600E3F2A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		728E931E1CA82B6600E3F2A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		728E93211CA82B6600E3F2A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -24,6 +25,8 @@
 		728E93261CA82B6600E3F2A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		728E93291CA82B6600E3F2A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		728E932B1CA82B6600E3F2A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		728E93311CA833DC00E3F2A3 /* OperationsHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationsHandler.h; sourceTree = "<group>"; };
+		728E93321CA833DC00E3F2A3 /* OperationsHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationsHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +51,7 @@
 		728E931B1CA82B6600E3F2A3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				728E931A1CA82B6600E3F2A3 /* testing.app */,
+				728E931A1CA82B6600E3F2A3 /* Small Calculator.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +67,8 @@
 				728E93281CA82B6600E3F2A3 /* Main.storyboard */,
 				728E932B1CA82B6600E3F2A3 /* Info.plist */,
 				728E93201CA82B6600E3F2A3 /* Supporting Files */,
+				728E93311CA833DC00E3F2A3 /* OperationsHandler.h */,
+				728E93321CA833DC00E3F2A3 /* OperationsHandler.m */,
 			);
 			path = testing;
 			sourceTree = "<group>";
@@ -79,9 +84,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		728E93191CA82B6600E3F2A3 /* testing */ = {
+		728E93191CA82B6600E3F2A3 /* Small Calculator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 728E932E1CA82B6600E3F2A3 /* Build configuration list for PBXNativeTarget "testing" */;
+			buildConfigurationList = 728E932E1CA82B6600E3F2A3 /* Build configuration list for PBXNativeTarget "Small Calculator" */;
 			buildPhases = (
 				728E93161CA82B6600E3F2A3 /* Sources */,
 				728E93171CA82B6600E3F2A3 /* Frameworks */,
@@ -91,9 +96,9 @@
 			);
 			dependencies = (
 			);
-			name = testing;
+			name = "Small Calculator";
 			productName = testing;
-			productReference = 728E931A1CA82B6600E3F2A3 /* testing.app */;
+			productReference = 728E931A1CA82B6600E3F2A3 /* Small Calculator.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +115,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 728E93151CA82B6600E3F2A3 /* Build configuration list for PBXProject "testing" */;
+			buildConfigurationList = 728E93151CA82B6600E3F2A3 /* Build configuration list for PBXProject "Small Calculator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -123,7 +128,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				728E93191CA82B6600E3F2A3 /* testing */,
+				728E93191CA82B6600E3F2A3 /* Small Calculator */,
 			);
 		};
 /* End PBXProject section */
@@ -145,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				728E93331CA833DC00E3F2A3 /* OperationsHandler.m in Sources */,
 				728E93251CA82B6600E3F2A3 /* ViewController.m in Sources */,
 				728E93221CA82B6600E3F2A3 /* main.m in Sources */,
 				728E931F1CA82B6600E3F2A3 /* AppDelegate.m in Sources */,
@@ -254,7 +260,7 @@
 				INFOPLIST_FILE = testing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kndavidenko.testing;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Small Calculator";
 			};
 			name = Debug;
 		};
@@ -266,14 +272,14 @@
 				INFOPLIST_FILE = testing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kndavidenko.testing;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Small Calculator";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		728E93151CA82B6600E3F2A3 /* Build configuration list for PBXProject "testing" */ = {
+		728E93151CA82B6600E3F2A3 /* Build configuration list for PBXProject "Small Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				728E932C1CA82B6600E3F2A3 /* Debug */,
@@ -282,13 +288,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		728E932E1CA82B6600E3F2A3 /* Build configuration list for PBXNativeTarget "testing" */ = {
+		728E932E1CA82B6600E3F2A3 /* Build configuration list for PBXNativeTarget "Small Calculator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				728E932F1CA82B6600E3F2A3 /* Debug */,
 				728E93301CA82B6600E3F2A3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
