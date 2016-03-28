@@ -32,8 +32,8 @@
 
 - (IBAction)onOperationPressed:(NSButton *)sender {
     NSLog(@"performing: %@ operation", sender.title);
-    CGFloat res = [OperationsHandler performOperation:sender.title onFirstOperand:[_firstNumber floatValue] andSecondOperand:[_secondNumber floatValue]];
-    [_result setFloatValue:res];
+    CGFloat res = [OperationsHandler performOperation:sender.title onFirstOperand:[_firstNumber doubleValue] andSecondOperand:[_secondNumber doubleValue]];
+    [_result setDoubleValue:res];
 }
 
 @end
